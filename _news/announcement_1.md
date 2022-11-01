@@ -5,4 +5,4 @@ inline: true
 ---
 
 ```Publication```
-New paper @ SiPs 2022: Virtual Triggering: a Technique to Segment Cryptographic Processes in Side-Channel Traces
+New paper @ SiPs 2022: Virtual Triggering: a Technique to Segment Cryptographic Processes in Side-Channel Traces. [[arXiv]](http://arxiv.org/abs/2210.12059), [[IEEEXplore]](https://ieeexplore.ieee.org/abstract/document/9919238/)
