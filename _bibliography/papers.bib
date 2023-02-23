@@ -1,3 +1,14 @@
+@inproceedings{razavi2023assessment,
+  abbr={IWAIT},
+  bibtex_show={true},
+  title={Assessment of Multi-Plenoptic 2.0 Camera Depth Maps for DIBR},
+  author={Razavi Khosroshahi, Hamed and Sancho, Jaime and Rosa, Gonzalo and Salvador, Ruben and Juarez, Eduardo and Lafruit, Gauthier and Teratani, Mehrdad},
+  booktitle={2023 International Workshop on Advanced Image Technology (IWAIT) and International Forums on Medical Imaging in Asia (IFMIA)},
+  year={2023},
+  organization={SPIE},
+  abstract = {{We aim to evaluate the depth map quality by the plenoptic 2.0 cameras for DIBR applications, by simulating a multi-plenoptic camera array, and synthesizing virtual images based on the obtained color and depth maps. The real-time generated depth maps by plenoptic cameras are compared with the offline and high-quality depth maps estimated by the MPEG-I Depth Estimation Reference Software (DERS). Results show that synthesized virtual image quality obtained by RGBD plenoptic cameras has lower quality than using the depth estimated by DERS, due to a loss of inter-view depth consistency.}}
+}
+
 @inproceedings{guillaume_VT_SiPS_2022, 
    selected={true},
    abbr={SiPS},
@@ -24,6 +35,7 @@
    isbn = {978-3-031-12748-9},
    year={2022},
    pages={123--135},
+   abstract={{Real-time constraints in image processing applications often force their optimization using hardware accelerators. This is the case for intraoperative medical images used during surgical procedures. In this context, the challenge consists in processing large volumes of data while employing high complexity algorithms in a limited period of time. Newly developed algorithms must meet both quality-accurate and hardware-efficient characteristics. In this work, we have evaluated the impact of using different data types in a processing chain to classify tissues from hyperspectral video in surgical environments. The software was run on two different embedded CPU+GPU platforms. The results show an improvement in performance by up to 9 times without increasing power consumption by reducing the bit depth from 64 to 16. The impact these reduction have on quality has been measured analytically, by calculating the RMSE, and subjectively, by surveying neurosurgeons. In both cases the results show a minimal impact on the overall quality.}}
 }
 
 @article{sancho_Sensors_2021,
@@ -38,6 +50,7 @@
    year={2021},
    publisher={Multidisciplinary Digital Publishing Institute},
    doi = {10.3390/s21124091},
+   abstract = {{ HyperSpectral (HS) images have been successfully used for brain tumor boundary detection during resection operations. Nowadays, these classification maps coexist with other technologies such as MRI or IOUS that improve a neurosurgeon’s action, with their incorporation being a neurosurgeon’s task. The project in which this work is framed generates an unified and more accurate 3D immersive model using HS, MRI, and IOUS information. To do so, the HS images need to include 3D information and it needs to be generated in real-time operating room conditions, around a few seconds. This work presents Graph cuts Reference depth estimation in GPU (GoRG), a GPU-accelerated multiview depth estimation tool for HS images also able to process YUV images in less than 5.5 s on average. Compared to a high-quality SoA algorithm, MPEG DERS, GoRG YUV obtain quality losses of −0.93 dB, −0.6 dB, and −1.96% for WS-PSNR, IV-PSNR, and VMAF, respectively, using a video synthesis processing chain. For HS test images, GoRG obtains an average RMSE of 7.5 cm, with most of its errors in the background, needing around 850 ms to process one frame and view. These results demonstrate the feasibility of using GoRG during a tumor resection operation.}}
 }
 
 @article{mendez_AppliedSciences_2021,
@@ -53,6 +66,7 @@
    year={2021},
    publisher={Multidisciplinary Digital Publishing Institute},
    doi = {10.3390/app11156790},
+   abstract = {{ During the last decade, Deep Neural Networks (DNN) have progressively been integrated on all types of platforms, from data centers to embedded systems including low-power processors and, recently, FPGAs. Neural Networks (NN) are expected to become ubiquitous in IoT systems by transforming all sorts of real-world applications, including applications in the safety-critical and security-sensitive domains. However, the underlying hardware security vulnerabilities of embedded NN implementations remain unaddressed. In particular, embedded DNN implementations are vulnerable to Side-Channel Analysis (SCA) attacks, which are especially important in the IoT and edge computing contexts where an attacker can usually gain physical access to the targeted device. A research field has therefore emerged and is rapidly growing in terms of the use of SCA including timing, electromagnetic attacks and power attacks to target NN embedded implementations. Since 2018, research papers have shown that SCA enables an attacker to recover inference models architectures and parameters, to expose industrial IP and endangers data confidentiality and privacy. Without a complete review of this emerging field in the literature so far, this paper surveys state-of-the-art physical SCA attacks relative to the implementation of embedded DNNs on micro-controllers and FPGAs in order to provide a thorough analysis on the current landscape. It provides a taxonomy and a detailed classification of current attacks. It first discusses mitigation techniques and then provides insights for future research leads.}}
 }
 
 @inproceedings{sancho_DCIS_2021,
@@ -66,6 +80,7 @@
    number={},
    pages={1-6},
    doi={10.1109/DCIS53048.2021.9666171},
+   abstract = {{Uyperspectral imaging (HSI) has been adopted during the last years in different applications where material classification plays an important role. This favoured the improvement and development of new HS sensors, leading to HS snapshot cameras, where the sensor is able to acquire images in a realtime video fashion, reducing the spatial and spectral resolution for these cameras. However, although these cameras are able to acquire RAW HS images at high frames per second (FPS) rates, it is necessary to pre-process them to obtain an actual HS image and then obtain a classification map. This work addresses the development of an embedded CPU+GPU HS video classification system able to acquire and classify HS images in real-time video, i.e., at more than 25 FPS. Also, it includes a comparison where three different CPU+GPU embedded platforms are tested: NVIDIA Jetson Nano, NVIDIA Jetson TX1 and NVIDIA Jetson TX2. The results obtained show the feasibility of a HS video classification system using these embedded platforms.}}
 }
 
 @inproceedings{sancho_DCIS_2020,
@@ -79,6 +94,7 @@
    number={},
    pages={1-6},
    doi={10.1109/DCIS51330.2020.9268649},
+   abstract = {{HyperSpectral (HS) images are commonly used for classification tasks in different domains, such as medicine. In this field, a recent use is the differentiation between healthy tissues and different types of cancerous tissues. To this end, different machine learning techniques have been proposed to generate classification maps that indicate the type of tissue corresponding to each pixel in the image. These 2D representations can be used stand-alone, but they can not be properly registered with other valuable data sources like Magnetic Resonance Imaging (MRI), which can improve the accuracy of the system. For this reason, this paper builds the foundations of a multi-modal classification system that will incorporate 3D information into HS images. Specifically, we address the acceleration of one of the hotspots in depth estimation tools/algorithms. MPEG-I Depth Estimation Reference Software (DERS) provides high-quality depth maps relying on a global energy optimizer algorithm: Graph Cuts. However, this algorithm needs huge processing times, preventing its use during surgical operations. This work introduces GoRG (Graph cuts Reference depth estimation in GPU), a GPU accelerated DERS able to produce depth maps from RGB and HS images. In this paper, due to the lack of HS multi-view datasets at the moment, results are reported on RGB images to validate the acceleration strategy. GoRG shows a ×25 average speed-up compared to baseline DERS 8.0, reducing total computation time from around one hour for 8 frames to only a few minutes. A consequence of our parallelization is an average decrease of 1.6 dB in Weighted-to-Spherically-Uniform Peak-Signal-to-Noise-Ratio (WS-PSNR), with some remarkable disparities approaching 4 dB. However, using Structural Similarity Index (SSIM) as metric results come closer to baseline DERS. Effectively, an average decrease of only 1.20% is achieved showing that the obtained speed-up gains compensate the subjective quality losses.}}
 }
 
 @article{madronal_Access_2019,
@@ -93,6 +109,7 @@
    pages={111801-111812},
    publisher   = {IEEE},
    doi={10.1109/ACCESS.2019.2934223},
+   abstract = {{The widening of the complexity-productivity gap in application development witnessed in the last years is becoming an important issue for the developers. New design methods try to automate most designers tasks to bridge this gap. In addition, new Model of Computations (MoCs), as those dataflow-based, ease the expression of parallelism within applications, leading to higher designer productivity. Rapid prototyping design tools offer fast estimations of the soundness of design choices. A key step when prototyping an application is to have representative performance indicators to estimate the validity of those design choices. Such indicators can be obtained using hardware information, while new libraries, e.g.,Performance Application Programming Interface (PAPI), ease the access to such hardware information. In this work, PAPIFY toolbox is presented as a tool to perform automatic PAPI-based instrumentation of dynamic dataflow applications. It combines PAPIFY with a dataflow Y-chart based design framework, which is called PREESM, and its companion run-time reconfiguration manager, which is called Synchronous Parameterized and Interfaced Dataflow Embedded Runtime (SPiDER). PAPIFY toolbox accounts for an automatic code generator for static and dynamic applications, a dedicated library to manage the monitoring at run-time and two User Interfaces (UIs) to ease both the configuration and the analysis of the captured run-time information. Additionally, its main advantages are 1) its capability of adapting the monitoring according to the system status and 2) adaptation of the monitoring accordingly to application workload redistribution in run-time. A thorough overhead characterization using Sobel-morpho and Stereo-matching dataflow applications shows that PAPIFY run-time monitoring overhead is up to 10%.}}
 }
 
 @article{lazcano_Access_2019,
@@ -107,6 +124,7 @@
    pages={152316-152333},
    publisher   = {IEEE},
    doi={10.1109/ACCESS.2019.2938708},
+   abstract = {{Hyperspectral (HS) imaging presents itself as a non-contact, non-ionizing and non-invasive technique, proven to be suitable for medical diagnosis. However, the volume of information contained in these images makes difficult providing the surgeon with information about the boundaries in real-time. To that end, High-Performance-Computing (HPC) platforms become necessary. This paper presents a comparison between the performances provided by five different HPC platforms while processing a spatial-spectral approach to classify HS images, assessing their main benefits and drawbacks. To provide a complete study, two different medical applications, with two different requirements, have been analyzed. The first application consists of HS images taken from neurosurgical operations; the second one presents HS images taken from dermatological interventions. While the main constraint for neurosurgical applications is the processing time, in other environments, as the dermatological one, other requirements can be considered. In that sense, energy efficiency is becoming a major challenge, since this kind of applications are usually developed as hand-held devices, thus depending on the battery capacity. These requirements have been considered to choose the target platforms: on the one hand, three of the most powerful Graphic Processing Units (GPUs) available in the market; and, on the other hand, a low-power GPU and a manycore architecture, both specifically thought for being used in battery-dependent environments.}}
 }
 
 @article{fabelo_access_2019,
@@ -123,6 +141,7 @@
    doi         = {10.1109/ACCESS.2019.2904788},
    issn        = {2169-3536},
    month       = {},
+   abstract    = {{The use of hyperspectral imaging for medical applications is becoming more common in recent years. One of the main obstacles that researchers find when developing hyperspectral algorithms for medical applications is the lack of specific, publicly available, and hyperspectral medical data. The work described in this paper was developed within the framework of the European project HELICoiD ( HypErspectraL Imaging Cancer Detection ), which had as a main goal the application of hyperspectral imaging to the delineation of brain tumors in real-time during neurosurgical operations. In this paper, the methodology followed to generate the first hyperspectral database of in-vivo human brain tissues is presented. Data was acquired employing a customized hyperspectral acquisition system capable of capturing information in the Visual and Near InfraRed (VNIR) range from 400 to 1000 nm. Repeatability was assessed for the cases where two images of the same scene were captured consecutively. The analysis reveals that the system works more efficiently in the spectral range between 450 and 900 nm. A total of 36 hyperspectral images from 22 different patients were obtained. From these data, more than 300 000 spectral signatures were labeled employing a semi-automatic methodology based on the spectral angle mapper algorithm. Four different classes were defined: normal tissue, tumor tissue, blood vessel, and background elements. All the hyperspectral data has been made available in a public repository.}}
 }
 
 @article{rubattu:esl:2019,
@@ -137,6 +156,7 @@
    pages={69-72},
    doi={10.1109/LES.2018.2882989},
    publisher={IEEE},
+   abstract = {{Domain-specific acceleration is now a must for all the computing spectrum, going from high performance computing to embedded systems. Unfortunately, system specialization is by nature a nightmare from the design productivity perspective. Nevertheless, in contexts where kernels to be accelerated are intrinsically streaming oriented, the combination of dataflow (DF) models of computation with coarse-grained reconfiguration (CGR) architectures can be particularly handful. In this letter we introduce a novel methodology to assemble and characterize virtually reconfigurable accelerators based on DF and functional programming principles, capable of addressing design productivity issues for CGR accelerators. The main advantage of the proposed methodology is accurate IP-level latency predictability improving design space exploration when compared with state-of-the-art high-level synthesis.}}
 }
 
 @article{mora:GENP:2019,
@@ -157,6 +177,7 @@
    issn        = {1573-7632},
    doi         = {10.1007/s10710-018-9340-5},
    url         = {https://doi.org/10.1007/s10710-018-9340-5},
+   abstract    = {{Evolvable hardware allows the generation of circuits that are adapted to specific problems by using an evolutionary algorithm (EA). Dynamic partial reconfiguration of FPGA LUTs allows making the processing elements (PEs) of these circuits small and compact, thus allowing large scale circuits to be implemented in a small FPGA area. This facilitates the use of these techniques in embedded systems with limited resources. The improvement on resource-efficient implementation techniques has allowed increasing the size of processing architectures from a few PEs to several hundreds. However, these large sizes pose new challenges for the EA and the architecture, which may not be able to take full advantage of the computing capabilities of its PEs. In this article, two different topologies—systolic array (SA) and Cartesian genetic programming (CGP)—are scaled from small to large sizes and analyzed, comparing their behavior and efficiency at different sizes. Additionally, improvements on SA connectivity are studied. Experimental results show that, in general, SA is considerably more resource-efficient than CGP, needing up to 60% fewer FPGA resources (LUTs) for a solution with similar performance, since the LUT usage per PE is 5 times smaller. Specifically, 10 × 10 SA has better performance than 5 × 10 CGP, but uses 50% fewer resources.}}
 } 
 
 @inproceedings{rogge_IC3D_2019,
@@ -169,6 +190,7 @@
    volume={},
    number={},
    doi={10.1109/IC3D48390.2019.8975995},
+   abstract = {{For enabling virtual reality on natural content, Depth Image-Based Rendering (DIBR) techniques have been steadily developed over the past decade, but their quality highly depends on that of the depth estimation. This paper is an attempt to deliver good-quality Depth Estimation Reference Software (DERS) that is well-structured for further use in the worldwide MPEG standardization committee.The existing DERS has been refactored, debugged and extended to any number of input views for generating accurate depth maps. Their quality has been validated by synthesizing DIBR virtual views with the Reference View Synthesizer (RVS) and the Versatile View Synthesizer (VVS), using the available MPEG test sequences. Resulting images and runtimes are reported.}}
 }
 
 @inproceedings{sancho_DCIS_2019,
@@ -182,6 +204,7 @@
    number={},
    pages={1-6},
    doi={10.1109/DCIS201949030.2019.8959835},
+   abstract = {{The increasing demand for HyperSpectral Imaging (HSI) applications has pushed the appearance of new, smaller and more affordable HS cameras. Their adoption in embedded systems with real-time and energy constraints open research questions given the huge amounts of data involved. Traditionally, this issue is tackled with dimensionality reduction algorithms as Principal Component Analysis (PCA). In this regard, a highly impacting factor in performance is the data layout used to store the 3D HS image into a 1D memory. In this paper, the impact of using the three main HS data layouts (BSQ, BIP and BIL) is analyzed in terms of performance and energy efficiency for two PCA methods in the embedded NVIDIA Jetson TX1 GPU-based accelerator. Results show the bottlenecks found for each layout along with architectural insights that explain the observed behaviours. Consequently, we provide a set of recommendations to select a suitable PCA method for best performance and energy efficiency, depending on the number of principal components required. Additionally, we observe how different orderings with similar results account for a much different developer's productivity given the involved coding complexity in each case.}}
 }
 
 @article{lazcano:JSPS:2019,
@@ -200,6 +223,7 @@
    issn        = {1939-8018},
    doi         = {10.1007/s11265-018-1380-9},
    publisher   = {Springer},
+   abstract    = {{This paper presents a study of the adaptation of a Non-Linear Iterative Partial Least Squares (NIPALS) algorithm applied to Hyperspectral Imaging to a Massively Parallel Processor Array manycore architecture, which assembles 256 cores distributed over 16 clusters. This work aims at optimizing the internal communications of the platform to achieve real-time processing of large data volumes with limited computational resources and memory bandwidth. As hyperspectral images are composed of extensive volumes of spectral information, real-time requirements, which are upper-bounded by the image capture rate of the hyperspectral sensor, are a challenging objective. To address this issue, the image size is usually reduced prior to the processing phase, which is itself a computationally intensive task. Consequently, this paper proposes an analysis of the intrinsic parallelism and the data dependency within the NIPALS algorithm and its subsequent implementation on a manycore architecture. Furthermore, this implementation has been validated against three hyperspectral images extracted from both remote sensing and medical datasets. As a result, an average speedup of 17× has been achieved when compared to the sequential version. Finally, this approach has been compared with other state-of-the-art implementations, outperforming them in terms of performance.}}
 }
 
 
@@ -218,6 +242,7 @@
    issn        = {1424-8220},
    doi         = {10.3390/s18072314},
    publisher   = {MDPI},
+   abstract    = {{The use of hyperspectral imaging (HSI) in the medical field is an emerging approach to assist physicians in diagnostic or surgical guidance tasks. However, HSI data processing involves very high computational requirements due to the huge amount of information captured by the sensors. One of the stages with higher computational load is the K-Nearest Neighbors (KNN) filtering algorithm. The main goal of this study is to optimize and parallelize the KNN algorithm by exploiting the GPU technology to obtain real-time processing during brain cancer surgical procedures. This parallel version of the KNN performs the neighbor filtering of a classification map (obtained from a supervised classifier), evaluating the different classes simultaneously. The undertaken optimizations and the computational capabilities of the GPU device throw a speedup up to 66.18× when compared to a sequential implementation.}}
 }
 
 @article{martel:remote_sensing:2018,
@@ -234,6 +259,7 @@
    url         = {http://www.mdpi.com/2072-4292/10/6/864},
    issn        = {2072-4292},
    doi         = {10.3390/rs10060864},
+   abstract    = {{Dimensionality reduction represents a critical preprocessing step in order to increase the efficiency and the performance of many hyperspectral imaging algorithms. However, dimensionality reduction algorithms, such as the Principal Component Analysis (PCA), suffer from their computationally demanding nature, becoming advisable for their implementation onto high-performance computer architectures for applications under strict latency constraints. This work presents the implementation of the PCA algorithm onto two different high-performance devices, namely, an NVIDIA Graphics Processing Unit (GPU) and a Kalray manycore, uncovering a highly valuable set of tips and tricks in order to take full advantage of the inherent parallelism of these high-performance computing platforms, and hence, reducing the time that is required to process a given hyperspectral image. Moreover, the achieved results obtained with different hyperspectral images have been compared with the ones that were obtained with a field programmable gate array (FPGA)-based implementation of the PCA algorithm that has been recently published, providing, for the first time in the literature, a comprehensive analysis in order to highlight the pros and cons of each option.}}
 }
 
 @inproceedings{madronal:CF:2018,
@@ -252,6 +278,9 @@
    publisher   = {ACM},
    address     = {New York, NY, US},
    note        = {Short paper + Poster},
+   abstract    = {{The widening of the complexity-productivity gap witnessed in the last years is becoming unaffordable from the application development point of view. New design methods try to automate most designers tasks in order to bridge this gap. In addition, new Models of Computation (MoC), as those dataflow-based, ease the expression of parallelism within applications and lead to higher productivity.
+   Rapid prototyping design tools offer fast estimations of the soundness of design choices. A key step when prototyping an application is to have representative performance indicators to estimate the validity of the design choices. Such indicators can be obtained using hardware information through the Performance API (PAPI).
+   In this work, PAPI and a dataflow MoC are integrated within a Y-chart design flow. The implementation takes the form of a dedicated automatic code generation scheme within the Preesm tool. Preliminary results show that depending on the complexity of the application, the computation time overhead due to monitoring varies from being almost negligible to more than 50%. Also, on top of offering accurate hardware performance indicators, the extracted values can be combined to estimate power or energy consumption.}}
 } 
 
 @article{fabelo:PONE:2018,
@@ -269,6 +298,7 @@
    issn        = {1932-6203},
    doi         = {10.1371/journal.pone.0193721},
    publisher   = {Public Library Science},
+   abstract    = {{Surgery for brain cancer is a major problem in neurosurgery. The diffuse infiltration into the surrounding normal brain by these tumors makes their accurate identification by the naked eye difficult. Since surgery is the common treatment for brain cancer, an accurate radical resection of the tumor leads to improved survival rates for patients. However, the identification of the tumor boundaries during surgery is challenging. Hyperspectral imaging is a non-contact, non-ionizing and non-invasive technique suitable for medical diagnosis. This study presents the development of a novel classification method taking into account the spatial and spectral characteristics of the hyperspectral images to help neurosurgeons to accurately determine the tumor boundaries in surgical-time during the resection, avoiding excessive excision of normal tissue or unintentionally leaving residual tumor. The algorithm proposed in this study to approach an efficient solution consists of a hybrid framework that combines both supervised and unsupervised machine learning methods. Firstly, a supervised pixel-wise classification using a Support Vector Machine classifier is performed. The generated classification map is spatially homogenized using a one-band representation of the HS cube, employing the Fixed Reference t-Stochastic Neighbors Embedding dimensional reduction algorithm, and performing a K-Nearest Neighbors filtering. The information generated by the supervised stage is combined with a segmentation map obtained via unsupervised clustering employing a Hierarchical K-Means algorithm. The fusion is performed using a majority voting approach that associates each cluster with a certain class. To evaluate the proposed approach, five hyperspectral images of surface of the brain affected by glioblastoma tumor in vivo from five different patients have been used. The final classification maps obtained have been analyzed and validated by specialists. These preliminary results are promising, obtaining an accurate delineation of the tumor area.}}
 }
 
 @article{fabelo:sensors:2018,
@@ -287,6 +317,7 @@
    doi         = {10.3390/s18020430},
    url         = {http://www.mdpi.com/1424-8220/18/2/430},
    publisher   = {MDPI AG},
+   abstract    = {{Hyperspectral imaging (HSI) allows for the acquisition of large numbers of spectral bands throughout the electromagnetic spectrum (within and beyond the visual range) with respect to the surface of scenes captured by sensors. Using this information and a set of complex classification algorithms, it is possible to determine which material or substance is located in each pixel. The work presented in this paper aims to exploit the characteristics of HSI to develop a demonstrator capable of delineating tumor tissue from brain tissue during neurosurgical operations. Improved delineation of tumor boundaries is expected to improve the results of surgery. The developed demonstrator is composed of two hyperspectral cameras covering a spectral range of 400–1700 nm. Furthermore, a hardware accelerator connected to a control unit is used to speed up the hyperspectral brain cancer detection algorithm to achieve processing during the time of surgery. A labeled dataset comprised of more than 300,000 spectral signatures is used as the training dataset for the supervised stage of the classification algorithm. In this preliminary study, thematic maps obtained from a validation database of seven hyperspectral images of in vivo brain tissue captured and processed during neurosurgical operations demonstrate that the system is able to discriminate between normal and tumor tissue in the brain. The results can be provided during the surgical procedure (~1 min), making it a practical system for neurosurgeons to use in the near future to improve excision and potentially improve patient outcomes.}}
 }
 
 @unpublished{salvador:vaader_seminars:2017,
@@ -315,6 +346,7 @@
    month       = {10},
    doi         = {10.1117/12.2279613},
    publisher   = {SPIE},
+   abstract    = {{Hyperspectral Imaging (HI) assembles high resolution spectral information from hundreds of narrow bands across the electromagnetic spectrum, thus generating 3D data cubes in which each pixel gathers the spectral information of the reflectance of every spatial pixel. As a result, each image is composed of large volumes of data, which turns its processing into a challenge, as performance requirements have been continuously tightened. For instance, new HI applications demand real-time responses. Hence, parallel processing becomes a necessity to achieve this requirement, so the intrinsic parallelism of the algorithms must be exploited. In this paper, a spatial-spectral classification approach has been implemented using a dataflow language known as RVCCAL. This language represents a system as a set of functional units, and its main advantage is that it simplifies the parallelization process by mapping the different blocks over different processing units. The spatial-spectral classification approach aims at refining the classification results previously obtained by using a K-Nearest Neighbors (KNN) filtering process, in which both the pixel spectral value and the spatial coordinates are considered. To do so, KNN needs two inputs: a one-band representation of the hyperspectral image and the classification results provided by a pixel-wise classifier. Thus, spatial-spectral classification algorithm is divided into three different stages: a Principal Component Analysis (PCA) algorithm for computing the one-band representation of the image, a Support Vector Machine (SVM) classifier, and the KNN-based filtering algorithm. The parallelization of these algorithms shows promising results in terms of computational time, as the mapping of them over different cores presents a speedup of 2.69x when using 3 cores. Consequently, experimental results demonstrate that real-time processing of hyperspectral images is achievable.}}
 }
 
 @article{madronal:JSA:2017,
@@ -330,6 +362,7 @@
    issn        = {1383-7621},
    doi         = {10.1016/j.sysarc.2017.08.002},
    publisher   = {Elsevier},
+   abstract    = {{This paper presents a study of the design space of a Support Vector Machine (SVM) classifier with a linear kernel running on a manycore MPPA (Massively Parallel Processor Array) platform. This architecture gathers 256 cores distributed in 16 clusters working in parallel. This study aims at implementing a real-time hyperspectral SVM classifier, where real-time is defined as the time required to capture a hyperspectral image. To do so, two aspects of the SVM classifier have been analyzed: the classification algorithm and the system parallelization. On the one hand, concerning the classification algorithm, first, the classification model has been optimized to fit into the MPPA structure and, secondly, a probability estimation stage has been included to refine the classification results. On the other hand, the system parallelization has been divided into two levels: first, the parallelism of the classification has been exploited taking advantage of the pixel-wise classification methodology supported by the SVM algorithm and, secondly, a double-buffer communication procedure has been implemented to parallelize the image transmission and the cluster classification stages. Experimenting with medical images, an average speedup of 9 has been obtained using a single-cluster and double-buffer implementation with 16 cores working in parallel. As a result, a system whose processing time linearly grows with the number of pixels composing the scene has been implemented. Specifically, only 3 µs are required to process each pixel within the captured scene independently from the spatial resolution of the image.}}
 }
 
 @inproceedings{lazcano:dasip:2017,
@@ -344,6 +377,7 @@
    doi         = {10.1109/DASIP.2017.8122111},
    isbn        = {978-1-5386-3534-6},
    publisher   = {IEEE},
+   abstract    = {{This paper presents a study of the parallelization possibilities of a Non-Linear Iterative Partial Least Squares algorithm and its adaptation to a Massively Parallel Processor Array manycore architecture, which assembles 256 cores distributed over 16 clusters. The aim of this work is twofold: first, to test the behavior of iterative, complex algorithms in a manycore architecture; and, secondly, to achieve real-time processing of hyperspectral images, which is fixed by the image capture rate of the hyperspectral sensor. Real-time is a challenging objective, as hyperspectral images are composed of extensive volumes of spectral information. This issue is usually addressed by reducing the image size prior to the processing phase itself. Consequently, this paper proposes an analysis of the intrinsic parallelism of the algorithm and its subsequent implementation on a manycore architecture. As a result, an average speedup of 13 has been achieved when compared to the sequential version. Additionally, this implementation has been compared with other state-of-the-art applications, outperforming them in terms of performance.}}
 }
 
 @inproceedings{madronal:dasip:2017,
@@ -358,6 +392,7 @@
    doi         = {10.1109/DASIP.2017.8122112},
    isbn        = {978-1-5386-3534-6},
    publisher   = {IEEE},
+   abstract    = {{In this paper, a Massively Parallel Processor Array platform is characterized in terms of energy consumption using a Support Vector Machine for hyperspectral image classification. This platform gathers 16 clusters composed of 16 cores each, i.e., 256 processors working in parallel. The objective of the work is to associate power dissipation and energy consumed by the platform with the different resources of the architecture. Experimenting with a hyperspectral SVM classifier, this study has been conducted using three strategies: i) modifying the number of processing elements, i.e., clusters and cores, ii) increasing system frequency, and iii) varying the number of active communication links during the analysis, i.e., I/Os and DMAs. As a result, a relationship between the energy consumption and the active platform resources has been exposed using two different parallelization strategies. Finally, the implementation that fully exploits the parallelization possibilities working at 500MHz has been proven to be also the most efficient one, as it reduces the energy consumption by 98% when compared to the sequential version running at 400MHz.}}
 }
 
 @inproceedings{salvador:recosoc:2017,
@@ -372,6 +407,7 @@
    doi         = {10.1109/ReCoSoC.2017.8016152},
    isbn        = {978-1-5386-3344-1},
    publisher   = {IEEE},
+   abstract    = {{Current computational demands require increasing designer's efficiency and system performance per watt. A broadly accepted solution for efficient accelerators implementation is reconfigurable computing. However, typical HDL methodologies require very specific skills and a considerable amount of designer's time. Despite the new approaches to high-level synthesis like OpenCL, given the large heterogeneity in today's devices (manycore, CPUs, GPUs, FPGAs), there is no one-fits-all solution, so to maximize performance, platform-driven optimization is needed. This paper reviews some latest works using Intel FPGA SDK for OpenCL and the strategies for optimization, evaluating the framework for the design of a hyperspectral image spatial-spectral classifier accelerator. Results are reported for a Cyclone V SoC using Intel FPGA OpenCL Offline Compiler 16.0 out-of-the-box. From a common baseline C implementation running on the embedded ARM ® Cortex ® -A9, OpenCL-based synthesis is evaluated applying different generic and vendor specific optimizations. Results show how reasonable speedups are obtained in a device with scarce computing and embedded memory resources. It seems a great step has been given to effectively raise the abstraction level, but still, a considerable amount of HW design skills is needed.}}
 }
 
 @article{lazcano:JSA:2017,
@@ -387,6 +423,8 @@
    issn        = {1383-7621},
    doi         = {10.1016/j.sysarc.2017.05.001},
    publisher   = {Elsevier},
+   abstract    = {{This paper presents a study of the parallelism of a Principal Component Analysis (PCA) algorithm and its adaptation to a manycore MPPA (Massively Parallel Processor Array) architecture, which gathers 256 cores distributed among 16 clusters. This study focuses on porting hyperspectral image processing into manycore platforms by optimizing their processing to fulfill real-time constraints, fixed by the image capture rate of the hyperspectral sensor. Real-time is a challenging objective for hyperspectral image processing, as hyperspectral images consist of extremely large volumes of data and this problem is often solved by reducing image size before starting the processing itself. To tackle the challenge, this paper proposes an analysis of the intrinsic parallelism of the different stages of the PCA algorithm with the objective of exploiting the parallelization possibilities offered by an MPPA manycore architecture. Furthermore, the impact on internal communication when increasing the level of parallelism is also analyzed.
+   Experimenting with medical images obtained from two different surgical use cases, an average speedup of 20 is achieved. Internal communications are shown to rapidly become the bottleneck that reduces the achievable speedup offered by the PCA parallelization. As a result of this study, PCA processing time is reduced to less than 6 s, a time compatible with the targeted brain surgery application requiring 1 frame-per-minute.}}
 }
 
 @inproceedings{salvador:CF:2017,
@@ -406,6 +444,7 @@
    acmid       = {},
    publisher   = {ACM},
    address     = {New York, NY, USA},
+   abstract    = {{The HELICoiD project is a European FP7 FET Open funded project. It is an interdisciplinary work at the edge of the biomedical domain, bringing together neurosurgeons, computer scientists and electronic engineers. The main target of the project was to provide a working demonstrator of an intraoperative image-guided surgery system for real-time brain cancer detection, in order to assist neurosurgeons during tumour resection procedures. One of the main problems associated to brain tumours is its infiltrative nature, which makes complete tumour resection a highly difficult task. With the combination of Hyperspectral Imaging and Machine Learning techniques, the project aimed at demonstrating that a precise determination of tumour boundaries was possible, helping this way neurosurgeons to minimize the amount of removed healthy tissue. The project partners involved, besides different universities and companies, two hospitals where the demonstrator was tested during surgical procedures. This paper introduces the difficulties around brain tumor resection, stating the main objectives of the project and presenting the materials, methodologies and platforms used to propose a solution. A brief summary of the main results obtained is also included.}}
 } 
 
 @article{fabelo:JNeuroOnc:2017,
@@ -422,6 +461,8 @@
    issn        = {1522-8517},
    doi         = {10.1093/neuonc/nox036.133},
    publisher   = {Oxford University Press Inc. (on behalf of the Society for Neuro-Oncology)},
+   abstract    = {{Introduction: Hyperspectral imaging (HSI) is an emerging technology for medical diagnosis. In this research work, a multidisciplinary team, made up of pathologists and engineers, presents a proof of concept on the use of HSI analysis in order to automatically detect human brain tumour tissue from pathological slides. The samples were acquired from four different patients diagnosed with high-grade gliomas. Based on the diagnosis provided by pathologists, a spectral library containing spectra from healthy and tumour tissues was created. Data were finally processed using three different supervised machine learning algorithms. Materials and methods: An acquisition system consisting of a HSI camera coupled to a microscope was developed to capture the hyperspectral images from pathology slides. The spectral sampling was done in the spectral range from 400 nm to 1000 nm with a spectral resolution of 2.8 nm. The biological samples consisted of biopsies of human brain tissue resected during surgery that followed a histological process, whereby tissue specimens were prepared for sectioning, staining and diagnosis. Only spectral characteristics of the data were taken into account. The inputs of the classifiers were the spectral signatures from healthy and tumour pixels. Three different supervised machine learning algorithms were employed: Support Vector Machines (SVM), Artificial Neural Networks (ANN) and Random Forests (RF). Results: The automatic diagnosis provided by the supervised classifiers shows a very high discrimination rate between healthy and tumour tissue, with high specificity and sensitivity above 90.83% and 94.55% respectively. Although all classifiers provide an accurate discrimination between healthy and tumour tissue, ANN presents the most accurate results with a specificity of 98.72% and a sensitivity of 97.71%. Conclusions: This research work presents a proof of concept in the use of HSI for automatically detecting brain tumour tissue in pathological slides. HSI can obtain an accurate diagnosis without using the morphological features of tissues, being a suitable complement to the current analysis methods, assisting pathologists to analyse the slides without having to spend a long time in the examination of each sample.
+   FUNDING: This work has been supported by the European Commission through the FP7 FET Open programme ICT- 2011.9.2, European Project HELICoiD “HypErspectral Imaging Cancer Detection” under Grant Agreement 618080.}}
 }
 
 @inproceedings{fabelo:WFNOs:2017,
@@ -448,6 +489,7 @@
    isbn        = {979-1-0922-7915-3},
    doi         = {10.1109/DASIP.2016.7853831},
    publisher   = {IEEE},
+   abstract    = {{In this paper, a demonstrator of three different elements of the EU FET HELICoiD project is introduced. The goal of this demonstration is to show how the combination of hyperspectral imaging and machine learning can be a potential solution to precise real-time detection of tumor tissues during surgical operations. The HELICoiD setup consists of two hyperspectral cameras, a scanning unit, an illumination system, a data processing system and an EMB01 accelerator platform, which hosts an MPPA-256 manycore chip. All the components are mounted fulfilling restrictions from surgical environments, as shown in the accompanying video recorded at the operating room. An in-vivo human brain hyperspectral image data base, obtained at the University Hospital Doctor Negrin in Las Palmas de Gran Canaria, has been employed as input to different supervised classification algorithms (SVM, RF, NN) and to a spatial-spectral filtering stage (SVM-KNN). The resulting classification maps are shown in this demo. In addition, the implementation of the SVM-KNN classification algorithm on the MPPA EMB01 platform is demonstrated in the live demo.}}
 }
 
 @inproceedings{salvador:DTIS:2016,
@@ -464,6 +506,7 @@
    isbn        = {978-1-5090-0336-5},
    url         = {https://tinyurl.com/y8t4rdh9},
    publisher   = {IEEE},
+   abstract    = {{The roots of adaptive and bio-inspired computing systems date back to the early days of computers. Evolvable Hardware is one of the various approaches that emerged in the last two decades with this objective. By bringing together Reconfigurable Computing (RC) and Evolutionary Computing (EC), i.e., a self-reconfigurable computing substrate and an algorithm working as an adaptation engine, a new species of hardware arose that should be able to evolve and achieve self-adaptation through its operational life. This paper introduces the field of EHW using FPGAs, classifies the different approaches and surveys the main works reported. Emphasis is put to highlight the works that have addressed Dynamic Partial Reconfiguration (DPR) in EHW trying to overcome the limitations imposed by the state of the technology in order to keep advancing the field.}}
 }
 
 @inproceedings{salvador:DCIS:2016,
@@ -582,6 +625,7 @@
    issn        = {0920-3796},
    doi         = {10.1016/j.fusengdes.2014.02.010},
    publisher   = {Elsevier},
+   abstract    = {{Image diagnostics are becoming standard ones in nuclear fusion. At present, images are typically analyzed off-line. However, real-time processing is occasionally required (for instance, hot-spot detection or pattern recognition tasks), which will be the objective for the next generation of fusion devices. In this paper, a test bed for image generation, acquisition, and real-time processing is presented. The proposed solution is built using a Camera Link simulator, a Camera Link frame-grabber, a PXIe chassis, and offers software interface with EPICS. The Camera Link simulator (PCIe card PCIe8 DVa C-Link from Engineering Design Team) generates simulated image data (for example, from video-movies stored in fusion databases) using a Camera Link interface to mimic the frame sequences produced with diagnostic cameras. The Camera Link frame-grabber (FlexRIO Solution from National Instruments) includes a field programmable gate array (FPGA) for image acquisition using a Camera Link interface; the FPGA allows for the codification of ad-hoc image processing algorithms using LabVIEW/FPGA software. The frame grabber is integrated in a PXIe chassis with system architecture similar to that of the ITER Fast Controllers, and the frame grabber provides a software interface with EPICS to program all of its functionalities, capture the images, and perform the required image processing. The use of these four elements allows for the implementation of a test bed system that permits the development and validation of real-time image processing techniques in an architecture that is fully compatible with that of the ITER Fast Controllers. This paper provides a specific example of a pattern search in a movie, its real-time implementation, and a performance analysis of the entire platform.}}
 }
 
 @article{salvador:TOC:2013,
@@ -598,6 +642,7 @@
    doi         = {10.1109/TC.2013.78},
    issn        = {0018-9340},
    publisher   = {IEEE},
+   abstract    = {{This paper presents an evolvable hardware system, fully contained in an FPGA, which is capable of autonomously generating digital processing circuits, implemented on an array of processing elements (PEs). Candidate circuits are generated by an embedded evolutionary algorithm and implemented by means of dynamic partial reconfiguration, enabling evaluation in the final hardware. The PE array follows a systolic approach, and PEs do not contain extra logic such as path multiplexers or unused logic, so array performance is high. Hardware evaluation in the target device and the fast reconfiguration engine used yield smaller reconfiguration than evaluation times. This means that the complete evaluation cycle is faster than software-based approaches and previous evolvable digital systems. The selected application is digital image filtering and edge detection. The evolved filters yield better quality than classic linear and nonlinear filters using mean absolute error as standard comparison metric. Results do not only show better circuit adaptation to different noise types and intensities, but also a nondegrading filtering behavior. This means they may be run iteratively to enhance filtering quality. These properties are even kept for high noise levels (40 percent). The system as a whole is a step toward fully autonomous, adaptive systems.}}
 }
 
 @inproceedings{gallego:MultiSystolicEHW:2013,
@@ -611,6 +656,7 @@
    pages       = {182--191},
    doi         = {10.1109/IPDPSW.2013.56},
    publisher   = {IEEE},
+   abstract    = {In this paper, an architecture based on a scalable and flexible set of Evolvable Processing arrays is presented. FPGA-native Dynamic Partial Reconfiguration (DPR) is used for evolution, which is done intrinsically, letting the system to adapt autonomously to variable run-time conditions, including the presence of transient and permanent faults. The architecture supports different modes of operation, namely: independent, parallel, cascaded or bypass mode. These modes of operation can be used during evolution time or during normal operation. The evolvability of the architecture is combined with fault-tolerance techniques, to enhance the platform with self-healing features, making it suitable for applications which require both high adaptability and reliability. Experimental results show that such a system may benefit from accelerated evolution times, increased performance and improved dependability, mainly by increasing fault tolerance for transient and permanent faults, as well as providing some fault identification possibilities. The evolvable HW array shown is tailored for window-based image processing applications.}
 }
 
 @misc{otero:EHWDemo:DATE:2012,
@@ -646,6 +692,7 @@
    isbn        = {978-1-4673-2257-7},
    publisher   = {IEEE},
    note        = {Poster},
+   abstract    = {{Adaptive hardware requires some reconfiguration capabilities. FPGAs with native dynamic partial reconfiguration (DPR) support pose a dilemma for system designers: whether to use native DPR or to build a virtual reconfigurable circuit (VRC) on top of the FPGA which allows selecting alternative functions by a multiplexing scheme. This solution allows much faster reconfiguration, but with higher resource overhead. This paper discusses the advantages of both implementations for a 2D image processing matrix. Results show how higher operating frequency is obtained for the matrix using DPR. However, this is compensated in the VRC during evolution due to the comparatively negligible reconfiguration time. Regarding area, the DPR implementation consumes slightly more resources due to the reconfiguration engine, but adds further more capabilities to the system.}}
 }
 
 @article{salvador:MICPRO:2012,
@@ -663,6 +710,7 @@
    issn        = {0141-9331},
    doi         = {10.1016/j.micpro.2012.02.002},
    publisher   = {Elsevier Science Publishers B. V.},
+   abstract    = {{Adaptive embedded systems are required in various applications. This work addresses these needs in the area of adaptive image compression in FPGA devices. A simplified version of an evolution strategy is utilized to optimize wavelet filters of a Discrete Wavelet Transform algorithm. We propose an adaptive image compression system in FPGA where optimized memory architecture, parallel processing and optimized task scheduling allow reducing the time of evolution. The proposed solution has been extensively evaluated in terms of the quality of compression as well as the processing time. The proposed architecture reduces the time of evolution by 44% compared to our previous reports while maintaining the quality of compression unchanged with respect to existing implementations. The system is able to find an optimized set of wavelet filters in less than 2min whenever the input type of data changes.}}
 }
 
 @inproceedings{salvador:ReConFig:2011,
@@ -677,6 +725,7 @@
    doi         = {10.1109/ReConFig.2011.37},
    isbn        = {978-1-4577-1734-5},
    publisher   = {IEEE},
+   abstract    = {{This paper presents an analysis of the fault tolerance achieved by an autonomous, fully embedded evolvable hardware system, which uses a combination of partial dynamic reconfiguration and an evolutionary algorithm (EA). It demonstrates that the system may self-recover from both transient and cumulative permanent faults. This self-adaptive system, based on a 2D array of 16 (4 4) Processing Elements (PEs), is tested with an image filtering application. Results show that it may properly recover from faults in up to 3 PEs, that is, more than 18% cumulative permanent faults. Two fault models are used for testing purposes, at PE and CLB levels. Two self-healing strategies are also introduced, depending on whether fault diagnosis is available or not. They are based on scrubbing, fitness evaluation, dynamic partial reconfiguration and in-system evolutionary adaptation. Since most of these adaptability features are already available on the system for its normal operation, resource cost for self-healing is very low (only some code additions in the internal microprocessor core).}}
 }
 
 @inproceedings{otero:DCIS:2011,
@@ -702,6 +751,7 @@
    isbn        = {978-1-4577-0598-4},
    publisher   = {IEEE},
    note        = {Poster},
+   abstract    = {{Modern FPGAs with Dynamic and Partial Reconfiguration (DPR) feature allow the implementation of complex, yet flexible, hardware systems. Combining this flexibility with evolvable hardware techniques, real adaptive systems, able to reconfigure themselves according to environmental changes, can be envisaged. In this paper, a highly regular and modular architecture combined with a fast reconfiguration mechanism is proposed, allowing the introduction of dynamic and partial reconfiguration in the evolvable hardware loop. Results and use case show that, following this approach, evolvable processing IP Cores can be built, providing intensive data processing capabilities, improving data and delay overheads with respect to previous proposals. Results also show that, in the worst case (maximum mutation rate), average reconfiguration time is 5 times lower than evaluation time.}}
 }
 
 @inproceedings{salvador:AHS:2011,
@@ -716,6 +766,7 @@
    doi         = {10.1109/AHS.2011.5963934},
    isbn        = {978-1-4577-0598-4},
    publisher   = {IEEE},
+   abstractr   = {{This paper addresses the modelling and validation of an evolvable hardware architecture which can be mapped on a 2D systolic structure implemented on commercial reconfigurable FPGAs. The adaptation capabilities of the architecture are exercised to validate its evolvability. The underlying proposal is the use of a library of reconfigurable components characterised by their partial bitstreams, which are used by the Evolutionary Algorithm to find a solution to a given task. Evolution of image noise filters is selected as the proof of concept application. Results show that computation speed of the resulting evolved circuit is higher than with the Virtual Reconfigurable Circuits approach, and this can be exploited on the evolution process by using dynamic reconfiguration.}}
 }
 
 @inproceedings{salvador:SPIE:2011,
@@ -733,6 +784,7 @@
    doi         = {10.1117/12.887123},
    isbn        = {978-0-8194-8656-1},
    publisher   = {SPIE},
+   abstract    = {{A generic bio-inspired adaptive architecture for image compression suitable to be implemented in embedded systems is presented. The architecture allows the system to be tuned during its calibration phase. An evolutionary algorithm is responsible of making the system evolve towards the required performance. A prototype has been implemented in a Xilinx Virtex-5 FPGA featuring an adaptive wavelet transform core directed at improving image compression for specific types of images. An Evolution Strategy has been chosen as the search algorithm and its typical genetic operators adapted to allow for a hardware friendly implementation. HW/SW partitioning issues are also considered after a high level description of the algorithm is profiled which validates the proposed resource allocation in the device fabric. To check the robustness of the system and its adaptation capabilities, different types of images have been selected as validation patterns. A direct application of such a system is its deployment in an unknown environment during design time, letting the calibration phase adjust the system parameters so that it performs efcient image compression. Also, this prototype implementation may serve as an accelerator for the automatic design of evolved transform coefficients which are later on synthesized and implemented in a non-adaptive system in the final implementation device, whether it is a HW or SW based computing device. The architecture has been built in a modular way so that it can be easily extended to adapt other types of image processing cores. Details on this pluggable component point of view are also given in the paper.}}
 }
 
 @article{salvador:eurasip:2011,
@@ -748,6 +800,7 @@
    issn        = {1687-6172},
    doi         = {10.1155/2011/973806},
    publisher   = {Hindawi Publishing Corp.},
+   abstract    = {{A bioinspired, evolutionary algorithm for optimizing wavelet transforms oriented to improve image compression in embedded systems is proposed, modelled, and validated here. A simplified version of an Evolution Strategy, using fixed point arithmetic and a hardware-friendly mutation operator, has been chosen as the search algorithm. Several cutdowns on the computing requirements have been done to the original algorithm, adapting it for an FPGA implementation. The work presented in this paper describes the algorithm as well as the test strategy developed to validate it, showing several results in the effort to find a suitable set of parameters that assure the success in the evolutionary search. The results show how high-quality transforms are evolved from scratch with limited precision arithmetic and a simplified algorithm. Since the intended deployment platform is an FPGA, HW/SW partitioning issues are also considered as well as code profiling accomplished to validate the proposal, showing some preliminary results of the proposed hardware architecture.}}
 }
 
 @inproceedings{salvador:DCIS:2010,
@@ -760,6 +813,7 @@
    pages       = {210--215},
    month       = {11},
    isbn        = {978-84-693-7393-4},
+   abstract    = {{Providing embedded systems with adaptation capabilities is an increasing importance objective in design community. This work deals with the implementation of adaptive compression schemes in FPGA devices by means of a bioinspired algorithm. A simplified version of an Evolution Strategy using fixed point arithmetic is proposed. Specifically, a simpler than the standard (hardware friendly) mutation operator is designed, modelled and validated using a high-level language. HW/SW partitioning issues are considered and code profiling accomplished to validate the proposal. Preliminary results of the proposed hardware architecture are also shown.}}
 }
 
 @inproceedings{salvador:DSD:2010,
@@ -774,6 +828,7 @@
    doi         = {10.1109/DSD.2010.96},
    isbn        = {978-1-4244-7839-2},
    publisher   = {IEEE},
+   abstract    = {{The work reported in this paper describes the steps given towards an FPGA-based implementation of evolvable wavelet transforms for image compression in embedded systems. An Evolutionary Algorithm (EA) for the design and optimization of the transform coefficients is tailored for a suitable System on Chip implementation. Several cut downs on the computing requirements have been done to the original algorithm, adapting it for the FPGA implementation. What this paper addresses more specifically is the validation of the algorithm using fixed point arithmetic for the whole optimization process. The results show how high quality transforms are evolved from scratch with limited precision arithmetic. Also, preliminary results of the implementation in an FPGA device are included.}}
 }
 
 @inproceedings{salvador:AHS:2010,
@@ -788,6 +843,7 @@
    doi         = {10.1109/AHS.2010.5546265},
    isbn        = {978-1-4244-5887-5},
    publisher   = {IEEE},
+   abstract    = {{This paper describes the initial studies of an Evolution Strategy aimed at implementation on embedded systems for the evolution of Wavelet Transforms for image compression. Previous works in the literature have already been proved useful for this application, but they are highly computationally intensive. Therefore, the work described here, deals with the simplifications made to those algorithms to reduce their computing requirements. Several optimizations have been done in the evaluation phase and in the EA operators. The results presented show how the proposed algorithm cut outs still allow for good results to be achieved, while effectively reducing the computing requirements.}}
 }
 
 @incollection{moreno:InTech:2010,
@@ -817,6 +873,7 @@
    ISSN        = {0278-0046}, 
    month       = {8},
    publisher   = {IEEE},
+   abstract    = {{Neural networks are widely used in pattern recognition, security applications, and robot control. We propose a hardware architecture system using tiny neural networks (TNNs) specialized in image recognition. The generic TNN architecture allows for expandability by means of mapping several basic units (layers) and dynamic reconfiguration, depending on the application specific demands. One of the most important features of TNNs is their learning ability. Weight modification and architecture reconfiguration can be carried out at run-time. Our system performs objects identification by the interpretation of characteristics elements of their shapes. This is achieved by interconnecting several specialized TNNs. The results of several tests in different conditions are reported in this paper. The system accurately detects a test shape in most of the experiments performed. This paper also contains a detailed description of the system architecture and the processing steps. In order to validate the research, the system has been implemented and configured as a perceptron network with back-propagation learning, choosing as reference application the recognition of shapes. Simulation results show that this architecture has significant performance benefits.}}
 }
 
 @inproceedings{salvador:SPIE:2009,
@@ -835,6 +892,7 @@
    doi         = {10.1117/12.821687},
    isbn        = {9780819476371},
    publisher   = {SPIE},
+   abstract    = {{Neural networks, widely used in pattern recognition, security applications and robot control have been chosen for the task of object recognition within this system. One of the main drawbacks of the implementation of traditional neural networks in reconfigurable hardware is the huge resource consuming demand. This is due not only to their intrinsic parallelism, but also to the traditional big networks designed. However, modern FPGA architectures are perfectly suited for this kind of massive parallel computational needs. Therefore, our proposal is the implementation of Tiny Neural Networks, TNN -self-coined term-, in reconfigurable architectures. One of most important features of TNNs is their learning ability. Therefore, what we show here is the attempt to rise the autonomy features of the system, triggering a new learning phase, at run-time, when necessary. In this way, autonomous adaptation of the system is achieved. The system performs shape identification by the interpretation of object singularities. This is achieved by interconnecting several specialized TNN that work cooperatively. In order to validate the research, the system has been implemented and configured as a perceptron-like TNN with backpropagation learning and applied to the recognition of shapes. Simulation results show that this architecture has significant performance benefits.}}
 }
 
 @inproceedings{moreno:IECON:2008, 
@@ -850,6 +908,7 @@
    isbn        = {978-1-4244-1767-4},
    month       = {11},
    publisher   = {IEEE},
+   abstract    = {{Neural networks are widely used in pattern recognition, security applications and robot control. We propose a hardware architecture system; using Tiny Neural Networks (TNN) specialized in image recognition. The generic TNN architecture allows expandability by means of mapping several Basic units (layers) and dynamic reconfiguration; depending on the application specific demands. One of the most important features of Tiny Neural Networks (TNN) is their learning ability. Weight modification and architecture reconfiguration can be carried out at run time. Our system performs shape identification by the interpretation of their singularities. This is achieved by interconnecting several specialized TNN. The results of several tests, in different conditions are reported in the paper. The system detects accurately a test shape in almost all the experiments performed. The paper also contains a detailed description of the system architecture and the processing steps. In order to validate the research, the system has been implemented and was configured as a perceptron network with backpropagation learning and applied to the recognition of shapes. Simulation results show that this architecture has significant performance benefits.}}
 }
 
 @inproceedings{lopez:wisp:2007, 
@@ -865,7 +924,20 @@
    isbn        = {978-1-4244-0830-6},
    publisher   = {IEEE},
    note        = {Poster},
+   abstract    = {{This paper describes an experiment to implement a high-level, cognitive architecture on limited resources, namely, an altera cyclone/cyclone-II FPGA. It is part of a broader line of research investigating methods of scaling high-level, cognitive or "intelligent" architectures into limited resources, for building embedded systems. An artificial vision system for traffic signal detection has been implemented with neural networks, according to the principles of a BB1/AIS blackboard architecture. Different scaling techniques and reductions have been carried out for embedding the system into an FPGA. The paper offers a description of the architectural design and hardware implementation results. A discussion of modularity, possible enhancements and tradeoffs is carried out throughout the paper.}}
 }
+
+@inproceedings{lopez2007architectural,
+  title={Architectural design for a low cost FPGA-based traffic signal detection system in vehicles},
+  author={L{\'o}pez, Ignacio and Salvador, Rub{\'e}n and Alarc{\'o}n, Jaime and Moreno, F{\'e}lix},
+  booktitle={VLSI Circuits and Systems III},
+  volume={6590},
+  pages={188--197},
+  year={2007},
+  organization={SPIE},
+  abstract = {{In this paper we propose an architecture for an embedded traffic signal detection system. Development of Advanced Driver Assistance Systems (ADAS) is one of the major trends of research in automotion nowadays. Examples of past and ongoing projects in the field are CHAMELEON ("Pre-Crash Application all around the vehicle" IST 1999-10108), PREVENT (Preventive and Active Safety Applications, FP6-507075, http://www.prevent-ip.org/) and AVRT in the US (Advanced Vision-Radar Threat Detection (AVRT): A Pre-Crash Detection and Active Safety System). It can be observed a major interest in systems for real-time analysis of complex driving scenarios, evaluating risk and anticipating collisions. The system will use a low cost CCD camera on the dashboard facing the road. The images will be processed by an Altera Cyclone family FPGA. The board does median and Sobel filtering of the incoming frames at PAL rate, and analyzes them for several categories of signals. The result is conveyed to the driver. The scarce resources provided by the hardware require an architecture developed for optimal use. The system will use a combination of neural networks and an adapted blackboard architecture. Several neural networks will be used in sequence for image analysis, by reconfiguring a single, generic hardware neural network in the FPGA. This generic network is optimized for speed, in order to admit several executions within the frame rate. The sequence will follow the execution cycle of the blackboard architecture. The global, blackboard architecture being developed and the hardware architecture for the generic, reconfigurable FPGA perceptron will be explained in this paper. The project is still at an early stage. However, some hardware implementation results are already available and will be offered in the paper.}}
+}
+
 
 @inproceedings{alarcon:IECON:2006, 
    abbr={IECON},
@@ -880,6 +952,7 @@
    ISSN        = {1553-572X},
    isbn        = {1-4244-0390-1},
    publisher   = {IEEE},
+   abstract    = {{In this article, a new real-time hardware architecture based on real time image processing and the use of a particle filter, as the fundamental element for tracking lines of a road, is presented. To this end a hardware system has been designed on an Altera Cyclone FPGA for processing the images obtained from a PAL video camera. This paper is part of a research line into on-board safety systems for vehicles, based on reconfigurable hardware systems that allow implementing low-cost high-reliability advanced driver assistance systems. The proposal outlined in this paper detects the lane lines by means of the combined use of probabilistic and deterministic techniques, in real time, with the necessary anticipation to deploy the primary and secondary safety interaction systems, PSSIS, on board the vehicle}}
 }
 
 @article{lopez:SPIENewsroom:2007,
@@ -909,6 +982,7 @@
    issn        = {0001-4966},
    doi         = {10.1121/1.4777190},
    publisher   = {Acoustical Society of America},
+   abstract    = {{In order to generate narrow‐band noise according to ANSI S3.6‐1996 in an efficient way, it is necessary to employ multirate signal processing techniques. Thanks to the successive conversion of the sampling rate in the stages of the system, an efficient implementation of the required algorithms is obtained. These signals are entirely bandpass signals. The adopted solution is to design equivalent lowpass filters followed by a frequency modulation of the filtered signal with the purpose of moving it to the desired frequency. To obtain a better performance in the resulting filter, multistage structures have been used to achieve the required changes in the sampling rate to implement the lowpass filter by means of a multirate signal processing technique. A LabVIEW application have been implemented for designing these types of filters. This program generates the filter coefficients and offers the possibility of carrying out a simulation and saving these coefficients into a C header file. These filters have been successfully tested, on a new DSP based audiometer that uses TI TMS320C6701, by means of Code Composer Studio and a series of routines that implement each one of the stages that compose the filter.}}
 }
 
 @thesis{salvador:phd:2015,
