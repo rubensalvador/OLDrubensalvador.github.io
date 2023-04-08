@@ -42,10 +42,9 @@
   type: time_table
   contents:
     - title: Associate Professor
-      institution: CentraleSupélec, Rennes, France
+      institution: <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://team.inria.fr/cidre/'>CIDRE team</a> | <a href='https://www.irisa.fr/en'>IRISA</a> - <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a> | Rennes, France
       year: 2019 - today
       description:
-        - Research appointment at <a href='https://www.ietr.fr/en'>IETR Laboratory</a> (Institut d'Electronique et des Technologies du numéRique)
     - title: Visiting Professor
       institution: INSA Rennes & IETR, Rennes, France (5 months)
       year: 2017
@@ -84,7 +83,7 @@
 - title: Accreditations and Qualifications
   type: time_table
   contents:
-    - title: Maître de Conférences (~Associate Professor)
+    - title: Maître de Conférences (~Assistant/Associate Professor)
       institution: CNU sections 61 & 63, France
       year: 2019
     - title: Assistant Professor
