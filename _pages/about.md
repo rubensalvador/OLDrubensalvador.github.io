@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <b> Associate Professor </b>  | <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://team.inria.fr/cidre/'>CIDRE team</a> | <a href='https://www.irisa.fr/en'>IRISA</a> - <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a>
+subtitle: <b> Associate Professor </b>  | <a href='https://www.centralesupelec.fr/'>CentraleSupélec</a> | <a href='https://team.inria.fr/cidre/'>CIDRE team</a> | <a href='https://www.irisa.fr/en'>IRISA</a> - <a href='https://www.inria.fr/en/inria-centre-rennes-university'>Inria</a> | Rennes, France
 
 profile:
   align: right
