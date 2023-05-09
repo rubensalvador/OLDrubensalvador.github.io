@@ -8,18 +8,28 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
 table {
-  td, th {
-    color: var(--global-text-color);
-  }
-  td {
-    font-size: 1rem;
-  }
+  border-collapse:collapse;
+  margin-top: 15px;
+  margin-bottom: 15px !important;
 }
+
+td, th {
+  color: var(--global-text-color);
+  border: 0.5px solid #{$grey-color};
+  margin: 0;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
 
 a, table.table a {
   color: var(--global-theme-color);
